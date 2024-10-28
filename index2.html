@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="description"
+    content="AME 220:Week 1 intro to HTML practice">
+
+    <head>
+        <title>Blaire's Portfolio</title>
+        <meta charset="utf-8">
+
+        <style>
+            h1{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                text-align: center; 
+                color: rgb(44, 37, 37);
+                font-size: 60px;
+            }
+
+            h2{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #3e98e2;
+                font-size: 30px;
+            }
+
+            h3{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(44, 37, 37);
+            }
+
+            p{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(44, 37, 37);
+                font-size: 20px;
+            }
+
+            nav {
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            nav a {
+                text-decoration: none; 
+                color: #3e98e2;
+            }
+
+            .navbar{
+                list-style-type: none;
+            }
+
+            .navbar li{
+                display: inline;
+                margin-right: 50px;
+            }
+
+            #song a {
+                text-decoration: none; 
+                color: rgb(247, 128, 231);
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                grid-gap: 15px;
+                color: rgb(44, 37, 37);
+            }
+
+        </style>
+
+        <body>
+            <header>
+                <h1>Blaire's Portfolio</h1>
+            </header>
+
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index2.html">About</a></li>
+                    <li><a href="index2.html">Goals</a></li>
+                    <li> <a href="index2.html">Songs</a></li>
+                    <li><a href="index2.html">Paris</a></li>
+                </ul>
+            </nav>
+
+            <main>
+
+                <div class="about-me">
+                    <h2>About Me</h2>
+                        <section>
+                            <p>I am from a town in Missouri with a population less than 1800.
+                                I moved to Orlando after I graduated to be somewhere new. Now I 
+                                work at Starbucks and go to ASU. Most of my free time is spent 
+                                with my dog and my friends.
+                            </p>
+                        </section>
+                </div>
+
+
+                <div id="goals">
+                    <h2>My Goals</h2>
+                        <section>
+                            <p>My first goal is to get finished with my Media Arts and Sciences 
+                                degree here at ASU. After that, I hope to find a job that I am 
+                                comfortable in that allows me to be creative or gives me enough 
+                                time to be creative in my personal life. 
+                            </p>
+                        </section>
+                </div>
+
+
+                <div id="song">
+                    <h2>My Current Favorite Songs</h2>
+                        <section>
+                            <a href="https://www.youtube.com/watch?v=0RRKXGhDTOo"target="_blank">Found Heaven by Conan Gray</a><br>
+                            <a href="https://www.youtube.com/watch?v=PiCJGXnEtIQ"target="_blank">Fable by Gigi Perez</a><br>
+                            <a href="https://www.youtube.com/watch?v=u0m0JJ0vfn0"target="_blank">To Get Better by Wasia Project</a>\
+                        </section>
+                </div>
+
+
+                <div id="my-dog">
+                    <h2>My Dog, Paris!</h2>
+                        <section>
+                            <img src="paris.jpg" height="500px" width="700px" alt="My dog Paris">
+                        </section>
+                </div>
+
+
+                <div id="contact">
+                    <h2>Contact Me</h2>
+                        <section>
+                            <form methods="post" action="blank">
+                                <label for="myName">*First and Last Name:</label>
+                                <input type="text" id="myName" name="myName" required>
+
+                                <label for="myEmail">*Email:</label>
+                                <input type="email" id="myEmail" name="myEmail" required>
+
+                                <label for="myPhone">Phone:</label>
+                                <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+
+                                <input type="submit" value="submit">
+                            </form>
+
+                        </section>
+                </div>
+
+            </main>
+
+        </body>
+    </head>
+
+</html>
